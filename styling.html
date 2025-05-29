@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Styled Website</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind CSS CDN (for demo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Internal CSS for minor page-specific tweaks -->
+  <style>
+    .custom-hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    /* Global Styles */
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+$primary-color: #1d4ed8;
+$card-radius: 1rem;
+
+.card {
+  background-color: white;
+  border-radius: $card-radius;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  
+  </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Header -->
+  <header class="custom-hero text-center">
+    <h1 class="text-4xl font-bold">Welcome to the Best Styled Website</h1>
+    <p class="mt-4 text-lg">Made with love, modern CSS, and style mastery</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto p-6">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600">Why Our Styles Rock</h2>
+      <p class="mt-2 text-gray-700">
+        Our styles use modular CSS, utility classes, and responsive design to ensure everything looks perfect on every screen.
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-medium">Utility-First (Tailwind)</h3>
+        <p class="text-gray-600 mt-2">Quick to write and easy to maintain styles using predefined classes.</p>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-medium">Component SCSS</h3>
+        <p class="text-gray-600 mt-2">Reusable, DRY, and nested styles with SASS variables and mixins.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-4 text-gray-500">
+    © 2025 BestStyled Inc.
+  </footer>
+
+</body>
+</html>

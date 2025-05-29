@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MUBUGA CURRENCY EXCHANGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MUBUGA CURRENCY EXCHANGE</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#converter">Converter</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2> Welcome To Exchange Money Easily & Securely</h2>
+    <p>We help travelers, businesses and everyone in between!</p>
+  </section>
+
+  <section id="converter">
+    <h2>Currency Converter</h2>
+    <div class="converter">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="RWF">RWF</option>
+      </select>
+      <select id="to-currency">
+        <option value="RWF">RWF</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <button onclick="convertCurrency()">Convert</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Foreign Exchange</li>
+      <li>International Money Transfers</li>
+      <li>Travel Money Assistance</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MUBUGA CURRENCY EXCHANGE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+ <style>
+  body {
+  background-image: url("currency.jpg");
+  background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+  background: #767b7e;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-image: url("vcoin.webp");
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .converter {
+    padding: 20px;
+    background-image: url("center.jpg");
+    background-size: cover;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .converter input,
+  .converter select {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #1e00b6;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 40px 20px;
+    background: #00b624;
+    background-image: url("hotel.jfif");
+    background-size: cover;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  footer {
+    background: #003845;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+</style>  
+<script>
+    function convertCurrency() {
+  const amount = parseFloat(document.getElementById('amount').value);
+  const from = document.getElementById('from-currency').value;
+  const to = document.getElementById('to-currency').value;
+
+  const rates = {
+    USD: { RWF: 1250, EUR: 0.92 },
+    RWF: { USD: 0.0008, EUR: 0.00074 },
+    EUR: { USD: 1.09, RWF: 1350 }
+  };
+
+  if (!amount || !rates[from] || !rates[from][to]) {
+    document.getElementById('result').innerText = "Invalid input.";
+    return;
+  }                                                                                                       
+
+  const result = amount * rates[from][to];
+  document.getElementById('result').innerText = `${amount} ${from} = ${result.toFixed(2)} ${to}`;
+}
+</script>

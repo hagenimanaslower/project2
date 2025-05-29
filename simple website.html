@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-green-500 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <img src="ICON.PNG" alt="Kira Clinic Logo" class="h-10 w-10 object-contain" />
+            <h1 class="text-white text-2xl font-semibold">Kira Clinic</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-white hover:text-green-100 transition duration-300">Home</a></li>
+                    <li><a href="#services" class="text-white hover:text-green-100 transition duration-300">Services</a></li>
+                    <li><a href="#partnership" class="text-white hover:text-green-100 transition duration-300">Partnership</a></li>
+                    <li><a href="#doctors" class="text-white hover:text-green-100 transition duration-300">Our Doctors</a></li>
+                    <li><a href="#about" class="text-white hover:text-green-100 transition duration-300">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-green-100 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+       
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block text-white text-lg hover:text-green-100 transition duration-300">Home</a></li>
+                    <li><a href="#services" class="block text-white text-lg hover:text-green-100 transition duration-300">Services</a></li>
+                    <li><a href="#partnership" class="block text-white text-lg hover:text-green-100 transition duration-300">Partnership</a></li>
+                    <li><a href="#doctors" class="block text-white text-lg hover:text-green-100 transition duration-300">Our Doctors</a></li>
+                    <li><a href="#about" class="block text-white text-lg hover:text-green-100 transition duration-300">About</a></li>
+                     <li><a href="#contact" class="block text-white text-lg hover:text-green-100 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="home" class="bg-green-100 py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-around px-4">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-semibold text-green-600 mb-4">Welcome to Kira Clinic</h2>
+                <p class="text-gray-700 mb-6">We are a clinic that offers consultation and treats various sicknesses.</p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#services" class="bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75">Our Services</a>
+                    <a href="#contact" class="bg-transparent border border-green-500 text-green-500 py-3 px-6 rounded-full hover:bg-green-500 hover:text-white transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75">Contact Us</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="doctor1.jpg"control width="200"height="0" alt="Doctor with Stethoscope" class="rounded-lg shadow-lg max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold text-green-600 mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                    
+                    <h3 class="text-xl font-semibold text-green-500 mb-4">Treatment for illness</h3>
+                    
+                    <img src="iliness.jpg"control width="200"height="150">
+                
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet tellus eu arcu. Mauris neque neque, sodales at massa pharetra, vitae nunc fermentum quisque. Potenti ullamcorper eget ultricies pretium ante.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-semibold text-green-500 mb-4">Basic laboratory</h3>
+                    <img src="basic laboratory.jpg"control width="200"height="150">
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae imperdiet tellus eu arcu. Mauris neque neque, sodales at massa pharetra, vitae nunc fermentum quisque. Potenti ullamcorper eget ultricies pretium ante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="partnership" class="bg-green-100 py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold text-green-600 mb-8">Partnership</h2>
+            <img src="partenership.jpg"control width="300"height="200">
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+                We believe in the power of collaboration to extend our reach and enhance our services.  We actively seek partnerships with like-minded organizations, hospitals, and research institutions. By working together, we can combine our strengths, share resources, and develop innovative solutions to address the evolving healthcare needs of our community.
+            </p>
+        </div>
+    </section>
+
+    <section id="doctors" class="py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold text-green-600 mb-8">Our Doctors</h2>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                    <img src="help.gpg.jpg" alt="help.gpg.jpg" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-semibold text-green-500 mb-2">Dr. Alice Smith</h3>
+                    <p class="text-gray-600 text-sm">Cardiologist</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                    <img src="dario.jpg" alt="kenny.jpg" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-semibold text-green-500 mb-2">Dr. Bob Johnson</h3>
+                    <p class="text-gray-600 text-sm">Pediatrician</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
+                    <img src="jose.jpg" alt="jose.jpg" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-semibold text-green-500 mb-2">Dr. Carol Williams</h3>
+                    <p class="text-gray-600 text-sm">Dermatologist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-green-100 py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold text-green-600 mb-8">About Us</h2>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+                Kira Clinic is a leading healthcare provider dedicated to offering a comprehensive range of medical services with a focus on patient-centered care.  Our team of experienced and compassionate healthcare professionals is committed to providing the highest quality treatment and promoting the well-being of our patients. We strive to create a welcoming and comfortable environment where patients can feel confident in the care they receive.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+      
+        
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold text-green-600 mb-8">Contact Us</h2>
+            
+            
+                <div class="icon-container">
+                    <div class="icon" onclick="handleClick('Phone')">
+                      📞  +250796229772
+                      <span>Phone</span>
+                    </div>
+                    <div class="icon" onclick="handleClick('Message')">
+                      💬 info@Kiraclinic.com
+                      <span>Message</span>
+                    </div>
+                    <div class="icon" onclick="handleClick('Location')">
+                      📍 gicumbi district
+                      <span>Location</span>
+                    </div>
+                  </div>
+                
+                  <script src="script.js"></script><br><br><br>
+                  
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-md mx-auto">
+                <p class="text-gray-700 text-lg mb-6">
+                    Get in touch with us for any inquiries or to schedule an appointment.
+                </p>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent">
+                    <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"></textarea>
+                    <button type="submit" class="bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 py-4">
+        <div class="container mx-auto text-center text-gray-600 px-4">
+
+
+
+
+            <footer class="footer">
+                <div class="footer-container">
+                  <div class="footer-section location">
+                    <h3>Kira Clinic</h3>
+                    <p>123 Health Avenue<br>Wellness City, 45678<br>+1 (234) 567-890</p>
+                  </div>
+              
+                  <div class="footer-section services">
+                    <h3>Our Services</h3>
+                    <ul>
+                      <li>General Consultation</li>
+                      <li>Dental Care</li>
+                      <li>Pediatrics</li>
+                      <li>Emergency Care</li>
+                    </ul>
+                  </div>
+              
+                  <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                      <ul>
+                      <li>
+                  <a href="https://www.facebook.com">facebook</a></li>
+                      <li><a href="https://www.twitter.com">twitter</a></li>
+                          <li><a href="https://www.instagram.com">instagram</a></li>
+                  </ul>
+                    </div
+                  </div>
+                </div>
+                </footer>
+            &copy; 2025 Kira Clinic. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+       function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+    <style>
+        section{
+
+            background-color: #0A1F44;
+        }
+ 
+
+
+
+.icon-container {
+  display: flex;
+  gap: 40px;
+}
+
+.icon {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.icon span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.footer {
+    background-color: #0e3d4e;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes icons white */
+  }
+  footer{
+
+    background-color: #0e3d4e;
+  }
+  section{
+
+    text-align: light;
+  }
+
+        
+    </style>
+</body>
+</html>
